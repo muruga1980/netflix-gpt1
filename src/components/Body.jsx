@@ -1,12 +1,22 @@
-import Footer from "./Footer";
-import Header from "./Header";
+import Browse from "./Browse";
+import Login from "./Login";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+
+const appRouter = createBrowserRouter([
+  {
+    path: "/",
+    element: <Login />,
+  },
+  {
+    path: "browse",
+    element: <Browse />,
+  },
+]);
 
 const Body = () => {
   return (
     <div>
-      <Header />
-      <h4>sdvsdsv</h4>
-      <Footer />
+      <RouterProvider router={appRouter} />;
     </div>
   );
 };
