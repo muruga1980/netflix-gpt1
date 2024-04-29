@@ -1,15 +1,21 @@
 import Header from "./Header";
 import UseNowPlayingMovies from "../customHooks/UseNowPlayingMovies";
 
+import MainContainer from "./MainContainer";
+import SecondaryContainer from "./SecondaryContainer";
+import UsePopularMovies from "../customHooks/UsePopularMovies ";
+
 const Browse = () => {
   UseNowPlayingMovies();
+  UsePopularMovies();
+
   return (
     /*
     Header
     Maincontainer
-      - videobackground
         -video title and description
-    Secondary container
+      - videobackground    
+    Secondary container                   
       - movile list * n
       - card *n
     */
@@ -17,8 +23,9 @@ const Browse = () => {
       <Header />
 
       <div className="bg-hero-pattern bg-cover h-screen w-full ">
-        <div className="bg-black bg-opacity-60 h-full w-full flex justify-center items-center">
-          sacsa
+        <div className="bg-black bg-opacity-60 h-full w-full   text-white">
+          <MainContainer />
+          <SecondaryContainer />
         </div>
       </div>
     </>
