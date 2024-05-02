@@ -1,7 +1,7 @@
 import logo from "../img/Netflix-Logo.wine.svg";
 import { IoSearchOutline, IoArrowBackOutline } from "react-icons/io5";
 
-import SUPPORT_LANG from "../utilities/constants";
+import { SUPPORT_LANG } from "../utilities/constants";
 
 import { useDispatch, useSelector } from "react-redux";
 import { toggleGptSearchAction } from "../utilities/gptSlice";

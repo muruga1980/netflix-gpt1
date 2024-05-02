@@ -28,7 +28,7 @@ const Browse = () => {
       <Header />
 
       <div className="bg-hero-pattern bg-cover h-screen w-full ">
-        <div className="bg-black bg-opacity-60 h-full w-full   text-white">
+        <div className="bg-black bg-opacity-60 h-screen w-full   text-white">
           {showGPT ? (
             <>
               <MainContainer />

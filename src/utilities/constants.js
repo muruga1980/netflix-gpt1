@@ -8,6 +8,8 @@
 // };
 
 export const IMG_CDN_PATH = "https://image.tmdb.org/t/p/w300/";
+export const NO_IMG_CDN_PATH =
+  "https://dummyimage.com/500/ddd/000&text=NetFlix.com";
 
 export const API_options = {
   method: "GET",
@@ -27,10 +29,10 @@ export const API_options = {
 eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJkMWI2NTVjNjAzZjkyMGM4MmVkNTllM2EwYWU2ZTBmNyIsInN1YiI6IjY2MmI3Yjg1NTAxY2YyMDExZmIzOTQ4MyIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.3gT9pMQ10Zpok3sDV9jLKrCuOv4GWlMzUXK2Jjq2Lus
 */
 
-const SUPPORT_LANG = [
+export const SUPPORT_LANG = [
   { identifier: "en", name: "English" },
   { identifier: "hindi", name: "Hindi" },
   { identifier: "spanish", name: "Spanish" },
 ];
 
-export default SUPPORT_LANG;
+export const OPEN_AI_KEY = process.env.REACT_APP_OPENAI_KEY;
